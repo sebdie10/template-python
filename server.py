@@ -13,6 +13,10 @@ def serve_static(path):
 def home():
    return render_template('index.html')
 
+@app.route('/inicio')
+def home_():
+   return 'hola mundo'
+
 @app.route('/<path:path>')
 def all_routes(path):
     return redirect('/')
