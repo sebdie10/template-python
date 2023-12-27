@@ -11,7 +11,7 @@ def serve_static(path):
 
 @app.route('/')
 def home():
-   return render_template('index.html')
+   return 'hola mundo'
 
 @app.route('/inicio')
 def home_():
